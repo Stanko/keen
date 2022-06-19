@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.tsx"],
+  "sourcesContent": ["console.log(\"Hello world!\");\n"],
+  "mappings": "mBAAA,QAAQ,IAAI,cAAc",
+  "names": []
+}

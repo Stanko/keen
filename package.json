@@ -1,0 +1,47 @@
+{
+  "name": "npm-package-init",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:esm": "tsc -p tsconfig.json && echo '{ \"type\": \"module\" }' > dist/esm/package.json",
+    "build:cjs": "tsc -p tsconfig-cjs.json && echo '{ \"type\": \"commonjs\" }' > dist/cjs/package.json",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:docs",
+    "start": "esbuild docs/docs.tsx docs/docs.css --bundle --tsconfig=tsconfig-demo.json --servedir=docs --outdir=docs/npm-package-init",
+    "build:docs": "esbuild docs/docs.tsx --bundle --tsconfig=tsconfig-demo.json --outdir=docs --minify --sourcemap",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.46",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Stanko/npm-package-init.git"
+  },
+  "keywords": [
+    "react",
+    "parallax"
+  ],
+  "author": "Stanko",
+  "bugs": {
+    "url": "https://github.com/Stanko/npm-package-init/issues"
+  },
+  "homepage": "https://github.com/Stanko/npm-package-init#readme",
+  "files": [
+    "dist/",
+    "CHANGELOG.md"
+  ]
+}
