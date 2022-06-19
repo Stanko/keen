@@ -1,5 +1,5 @@
 {
-  "name": "npm-package-init",
+  "name": "keen",
   "version": "1.0.0",
   "private": false,
   "license": "MIT",
@@ -18,7 +18,7 @@
     "build:esm": "tsc -p tsconfig.json && echo '{ \"type\": \"module\" }' > dist/esm/package.json",
     "build:cjs": "tsc -p tsconfig-cjs.json && echo '{ \"type\": \"commonjs\" }' > dist/cjs/package.json",
     "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:docs",
-    "start": "esbuild docs/docs.tsx docs/docs.css --bundle --tsconfig=tsconfig-demo.json --servedir=docs --outdir=docs/npm-package-init",
+    "start": "esbuild docs/docs.tsx docs/docs.css --bundle --tsconfig=tsconfig-demo.json --servedir=docs --outdir=docs/keen",
     "build:docs": "esbuild docs/docs.tsx --bundle --tsconfig=tsconfig-demo.json --outdir=docs --minify --sourcemap",
     "prepublishOnly": "npm run build"
   },
@@ -29,7 +29,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Stanko/npm-package-init.git"
+    "url": "git+ssh://git@github.com/Stanko/keen.git"
   },
   "keywords": [
     "react",
@@ -37,9 +37,9 @@
   ],
   "author": "Stanko",
   "bugs": {
-    "url": "https://github.com/Stanko/npm-package-init/issues"
+    "url": "https://github.com/Stanko/keen/issues"
   },
-  "homepage": "https://github.com/Stanko/npm-package-init#readme",
+  "homepage": "https://github.com/Stanko/keen#readme",
   "files": [
     "dist/",
     "CHANGELOG.md"

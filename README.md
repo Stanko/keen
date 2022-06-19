@@ -1,4 +1,4 @@
-# npm-package-init
+# keen
 
 My personal, minimal setup for building and releasing npm packages. Please note that I'm using this on MacOS and I haven't tested it on other systems.
 
@@ -11,11 +11,13 @@ My personal, minimal setup for building and releasing npm packages. Please note 
 
 ## Renaming the package
 
-To rename a package you can run these two commands:
+To rename a package you can run this command:
 
 ```
-sed -i '' 's/npm-package-init/new-package-name/' *.json *.md src/* docs/*
+sed -i '' 's/keen/new-package-name/' *.json *.md src/* docs/*
 ```
+
+You probably want to replace my GitHub handle as well:
 
 ```
 sed -i '' 's/Stanko/your-github-handle/' package.json
