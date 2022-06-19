@@ -18,8 +18,8 @@
     "build:esm": "tsc -p tsconfig.json && echo '{ \"type\": \"module\" }' > dist/esm/package.json",
     "build:cjs": "tsc -p tsconfig-cjs.json && echo '{ \"type\": \"commonjs\" }' > dist/cjs/package.json",
     "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:docs",
-    "start": "esbuild docs/docs.tsx docs/docs.css --bundle --tsconfig=tsconfig-demo.json --servedir=docs --outdir=docs/keen",
-    "build:docs": "esbuild docs/docs.tsx --bundle --tsconfig=tsconfig-demo.json --outdir=docs --minify --sourcemap",
+    "start": "esbuild docs/src/docs.tsx docs/src/docs.css --bundle --tsconfig=tsconfig-demo.json --servedir=docs --outdir=docs/keen/build",
+    "build:docs": "esbuild docs/src/docs.tsx docs/src/docs.css --bundle --tsconfig=tsconfig-demo.json --outdir=docs/build --minify --sourcemap",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
