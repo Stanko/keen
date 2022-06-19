@@ -7,9 +7,10 @@ My personal, minimal setup for building and releasing npm packages. Please note 
 ## Features
 
 - Uses TypeScript by default.
-- Generates both ESM and CJS modules, as well as definitions.
-- Simple system for creating a demo page and releasing it to the GitHub pages.
+- Generates both ESM and CJS modules, as well as type definitions.
+- Simple system for creating a demo/docs page and deploying it to the GitHub pages.
 - Minimal - only two dev dependencies: `esbuild` and `typescript`.
+- Builds everything automatically before `npm publish`.
 
 ## Renaming the package
 
@@ -33,4 +34,4 @@ Runs a development server on http://localhost:8000
 
 `npm run build`
 
-Build the package and the demo page.
+Builds the package and the demo/docs page.

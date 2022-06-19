@@ -31,10 +31,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/Stanko/keen.git"
   },
-  "keywords": [
-    "react",
-    "parallax"
-  ],
+  "keywords": [],
   "author": "Stanko",
   "bugs": {
     "url": "https://github.com/Stanko/keen/issues"
