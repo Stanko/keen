@@ -2,6 +2,8 @@
 
 My personal, minimal setup for building and releasing npm packages. Please note that I'm using this on MacOS and I haven't tested it on other systems.
 
+![Commander Keen](./keen.png)
+
 ## Features
 
 - Uses TypeScript by default.
