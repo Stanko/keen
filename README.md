@@ -4,6 +4,8 @@ My personal, minimal setup for building and releasing npm packages. Please note 
 
 ![Commander Keen](./keen.png)
 
+Read the introductory [blog post](https://muffinman.io/blog/introducing-keen-npm-package-boilerplate/). Name comes from a fictional character [Commander Keen](https://en.wikipedia.org/wiki/Commander_Keen).
+
 ## Features
 
 - Uses TypeScript by default.
