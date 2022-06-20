@@ -4,13 +4,13 @@
     "esModuleInterop": true,
     "declaration": true,
     "jsx": "react",
-    "module": "es6",
+    "module": "ES2015",
     "moduleResolution": "node",
     "outDir": "dist",
     "pretty": true,
     "resolveJsonModule": true,
     "strict": true,
-    "lib": ["es6", "dom", "es2017"]
+    "lib": ["dom", "ES2015", "ES2017"]
   },
   "exclude": ["node_modules", "dist"],
   "include": ["src"]
