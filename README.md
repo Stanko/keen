@@ -26,6 +26,8 @@ You probably want to replace my GitHub handle as well:
 sed -i '' 's/Stanko/your-github-handle/' package.json
 ```
 
+And the last thing, open [docs/index.html](./docs/index.html) and swap my domain `muffinman.io` for yours.
+
 ## Commands
 
 `npm start`
@@ -35,3 +37,7 @@ Runs a development server on http://localhost:8000
 `npm run build`
 
 Builds the package and the demo/docs page.
+
+## Deploying to GitHub pages
+
+Fist build and commit `docs/build` folder. Then in GitHub Pages settings select your branch and `/docs` folder.
