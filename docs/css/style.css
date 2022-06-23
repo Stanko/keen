@@ -86,6 +86,15 @@ table {
 
 body {
   padding: 30px;
+  color: #111;
+  background: #fafafe;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #fafafe;
+  }
 }
 
 h1 {
@@ -93,5 +102,17 @@ h1 {
 }
 
 p {
-  margin-bottom: 10px;
+  margin: 10px 0;
+}
+
+img {
+  margin-top: 20px;
+}
+
+a {
+  color: #00a800;
+}
+
+a:hover {
+  color: inherit;
 }

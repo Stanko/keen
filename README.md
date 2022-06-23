@@ -2,7 +2,7 @@
 
 My personal, minimal setup for building and releasing npm packages. Please note that I'm using this on MacOS and I haven't tested it on other systems.
 
-![Commander Keen](./keen.png)
+![Commander Keen](./docs/img/keen.png)
 
 Read the introductory [blog post](https://muffinman.io/blog/introducing-keen-npm-package-boilerplate/). Name comes from a fictional character [Commander Keen](https://en.wikipedia.org/wiki/Commander_Keen).
 
