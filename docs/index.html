@@ -39,6 +39,12 @@
   <img src="./img/keen.png" alt="Commander Keen" />
 
   <script src="./build/docs.js"></script>
+  <script>
+    // Live reload
+    new EventSource("/esbuild").addEventListener("change", (e) => {
+      location.reload();
+    });
+  </script>
 </body>
 
 </html>
